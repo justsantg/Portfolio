@@ -5,9 +5,6 @@ import {
   FaCalendarAlt,
   FaSwatchbook,
 } from 'react-icons/fa';
-import { FaChalkboardUser } from 'react-icons/fa6';
-import { MdWidgets } from 'react-icons/md';
-import { BiLogOut } from 'react-icons/bi';
 import { BsAmazon } from 'react-icons/bs';
 
 type NavItemType = {
@@ -32,13 +29,13 @@ type LanguageType = {
 
 export const dataNavbar = (navItem: number): NavbarType => ({
   logo: {
-    title: 'xenon',
+    title: '',
     icon: iconLogo,
   },
   nav: [
     {
       id: 1,
-      title: 'Home',
+      title: 'homePage',
       icon: (
         <BsAmazon
           className={navItem === 1 ? 'text-app-primary' : 'text-app-shade-5'}
@@ -48,74 +45,45 @@ export const dataNavbar = (navItem: number): NavbarType => ({
     },
     {
       id: 2,
-      title: 'Analytics',
+      title: 'aboutMe',
       icon: (
         <FaChartLine
           className={navItem === 2 ? 'text-app-primary' : 'text-app-shade-5'}
         />
       ),
-      to: '/analytics',
+      to: '/aboutMe',
     },
     {
       id: 3,
-      title: 'Chat',
+      title: 'portfolio',
       icon: (
         <FaCommentDots
           className={navItem === 3 ? 'text-app-primary' : 'text-app-shade-5'}
         />
       ),
-      to: '/chat',
+      to: '/portfolio',
     },
     {
       id: 4,
-      title: 'Calendar',
+      title: 'skills',
       icon: (
         <FaCalendarAlt
           className={navItem === 4 ? 'text-app-primary' : 'text-app-shade-5'}
         />
       ),
-      to: '/calendar',
+      to: '/skills',
     },
     {
       id: 5,
-      title: 'Project',
+      title: 'contactMe',
       icon: (
         <FaSwatchbook
           className={navItem === 5 ? 'text-app-primary' : 'text-app-shade-5'}
         />
       ),
-      to: '/project',
+      to: '/contactMe',
     },
-    {
-      id: 6,
-      title: 'Widgets',
-      icon: (
-        <MdWidgets
-          className={navItem === 6 ? 'text-app-primary' : 'text-app-shade-5'}
-        />
-      ),
-      to: '/widgets',
-    },
-    {
-      id: 7,
-      title: 'Meetings',
-      icon: (
-        <FaChalkboardUser
-          className={navItem === 7 ? 'text-app-primary' : 'text-app-shade-5'}
-        />
-      ),
-      to: '/meetings',
-    },
-    {
-      id: 8,
-      title: 'Logout',
-      icon: (
-        <BiLogOut
-          className={navItem === 8 ? 'text-app-primary' : 'text-app-shade-5'}
-        />
-      ),
-      to: '/logout',
-    },
+    
   ],
 });
 export const languageData = (): LanguageType[] => [

@@ -1,7 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
 
 import Header from './components/header';
-import Home from './screens/Home';
+import HomePage from './screens/homePage';
+import AboutMe from './screens/aboutMe';
+import Portfolio from './screens/portfolio';
+import Skills from './screens/skills';
+import Contact from './screens/contact';
+
 
 
 function App() {
@@ -12,9 +17,16 @@ function App() {
         <Header />
 
         
-        <section className='bg-red-300'>
+        <section className='bg' style={{background : '#dcc9ac'}}>
           <Routes>
-            <Route path='/' element={<Home />} />
+            <Route path='/' element={<HomePage />} />
+            <Route path='/aboutMe' element={<AboutMe />} />
+            <Route path='/portfolio' element={<Portfolio />} />
+            <Route path='/habilidades' element={<Skills />} />
+            <Route path='/contacto' element={<Contact />} />
+
+
+
             
           </Routes>
         </section>
