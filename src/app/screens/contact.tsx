@@ -44,7 +44,7 @@ const ContactDetail: React.FC<ContactDetailProps> = ({ label, href, value }) => 
   const handleWhatsAppClick = () => {
     const whatsappUrl = 'https://web.whatsapp.com/send?phone=+573003719503'+value; // Replace with the provided WhatsApp link
 
-    window.location.href = whatsappUrl; // Open WhatsApp Web for all devices
+    window.open.location.href = whatsappUrl ,'_blank'; // Open WhatsApp Web for all devices
   };
 
   return (
