@@ -6,6 +6,7 @@ const Contact: React.FC = () => {
     { href: 'https://www.instagram.com/justsantg?igsh=MTBvM3l4bjlvamRwaA==', label: 'Instagram' },
     { href: 'https://www.linkedin.com/in/santiago-rs-77198b288/', label: 'Linkedin' },
   ];
+  
 
   return (
     <div className="container mx-auto mt-8">
