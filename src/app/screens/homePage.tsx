@@ -1,15 +1,9 @@
 import { useTranslation } from 'react-i18next';
-import { t } from "i18next";
-import React from 'react';
 
 
 const HomePage = () => {
-  const { i18n, t } = useTranslation();
+  const { t } = useTranslation();
 
-  const onChangeLang = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const lang_code = e.target.value;
-    i18n.changeLanguage(lang_code);
-  };
   return (
     <div className="flex flex-col items-center min-h-screen text-center"> 
       <div className="flex flex-col items-center w-full max-w-2xl px-4 py-8">

@@ -1,14 +1,8 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { t } from "i18next";
 
 const AboutMe = () => {
-  const { i18n, t } = useTranslation();
+  const { t } = useTranslation();
 
-  const onChangeLang = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const lang_code = e.target.value;
-    i18n.changeLanguage(lang_code);
-  };
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
     <section id="sobre-mi" className="container mx-auto px-4 py-8">

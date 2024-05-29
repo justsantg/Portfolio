@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link, NavLink } from 'react-router-dom';
 import { languageData } from '../data/data';
-import { t } from 'i18next';
 import { useState } from 'react';
 import logo from "../../assets/icons/Logo.svg";
 

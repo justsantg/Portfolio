@@ -1,15 +1,10 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Portfolio = () => {
-  const { i18n, t } = useTranslation();
+  const { t } = useTranslation();
 
-  const onChangeLang = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const lang_code = e.target.value;
-    i18n.changeLanguage(lang_code);
-  };
 
   return (
     <section id="portafolio" className="container mx-auto px-4 py-8">
