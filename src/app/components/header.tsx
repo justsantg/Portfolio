@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 
 const Header = () => {
-  const { i18n, t } = useTranslation(); {}
+  const { i18n, t } = useTranslation(); {/*lol*/ } 
   const onChangeLang = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const lang_code = e.target.value;
     i18n.changeLanguage(lang_code);
