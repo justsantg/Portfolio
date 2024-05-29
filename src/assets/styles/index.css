@@ -49,5 +49,54 @@
     height: auto;
 }
 
+.min-h-screen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .w-full {
+    width: 100%; /* Ajusta el ancho del contenedor a la anchura de la pantalla */
+  }
+  
+  .max-w-2xl {
+    max-width: 80%; /* Ajusta el ancho máximo del contenedor a un 80% de la anchura de la pantalla */
+  }
+  
+  .px-4 {
+    padding: 2rem; /* Ajusta el padding horizontal a 2rem */
+  }
+  
+  .py-8 {
+    padding: 4rem; /* Ajusta el padding vertical a 4rem */
+  }
+  
+  .profilePic {
+    height: 300px; /* Ajusta la altura de la imagen de perfil a 300px */
+    width: 300px; /* Ajusta el ancho de la imagen de perfil a 300px */
+    border-radius: 10px; /* Ajusta el radio de la esquina de la imagen de perfil a 10px */
+    margin: 2rem; /* Ajusta el margen de la imagen de perfil a 2rem */
+  }
+  
+  .text-5xl {
+    font-size: 3rem; /* Ajusta el tamaño de la fuente del título a 3rem */
+  }
+  
+  .text-xl {
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente del texto a 1.5rem */
+  }
+
+  .logo2{
+    margin-top: 10px;
+    background-image: url(../icons/Logo.svg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .text-xl {
+    margin-top: 10px;
+  }
 
 

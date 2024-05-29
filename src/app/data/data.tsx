@@ -1,4 +1,4 @@
-import iconLogo from './../../assets/icons/logo.svg';
+import iconLogo from './../../assets/icons/Logo.svg';
 import {
   FaChartLine,
   FaCommentDots,

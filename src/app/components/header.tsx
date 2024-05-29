@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { languageData } from '../data/data';
 import { t } from 'i18next';
 import { useState } from 'react';
+import logo from "../../assets/icons/Logo.svg";
 
 const Header = () => {
   const { i18n, t } = useTranslation();
@@ -20,8 +21,8 @@ const Header = () => {
     <header className="p-2" style={{ background: '#C7A77D' }}>
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         <Link to="/" className="flex items-center">
-          <img src="/logo.png" alt="Logo" className="h-8" />
-          <span className="text-xl font-bold ml-2">{t('appName')}</span>
+          <span className="text-xl font-bold mr-2 logo-text">Bienvenido</span>
+          <img src={logo} alt="logo" className="logo2" />
         </Link>
 
         <button id="menuButton" className="md:hidden flex items-center px-4 py-2 focus:outline-none" onClick={handleMenuClick}>

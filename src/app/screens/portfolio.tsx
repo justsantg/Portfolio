@@ -27,7 +27,7 @@ const Portfolio = () => {
                 height={250}
                 className="project1 rounded-lg shadow-md mb-4"
               />
-              <h3 className=" flex flex-col items-centertext-xl font-bold mb-2">{t('apiGranja')}</h3>
+              <h3 className=" flex flex-col items-center text-xl font-bold mb-2">{t('apiGranja')}</h3>
               <p className=" flex flex-col items-center text-gray-600 mb-4">{t('description1')}</p>
               <a href="https://github.com/SantiagoReyes1809/GranjaEle2.git" className="bg-blue-500 text-white font-bold py-2 px-4 rounded-md  transition-colors" style={{background: '#734935'}}>
                 {t('seeMore')}</a>
