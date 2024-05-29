@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link, NavLink } from 'react-router-dom';
 import { languageData } from '../data/data';
-import { useState } from 'react';
 
 const Header = () => {
   const { i18n, t } = useTranslation();
