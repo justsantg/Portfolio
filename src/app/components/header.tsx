@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Link, NavLink } from 'react-router-dom';
 import { languageData } from '../data/data';
 import { useState } from 'react';
-import iconlogo from "../../assets/icons/Logo.svg";
+
 
 
 const Header = () => {
@@ -20,9 +20,8 @@ const Header = () => {
   return (
     <header className="p-2" style={{ background: '#C7A77D' }}>
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-        <Link to="/" className="flex items-center">
+        <Link to="/" className="flex items-center logo2">
           <span className="text-xl font-bold mr-2 logo-text">Bienvenido</span>
-          <img src={iconlogo} alt="logo" className="logo2" />
         </Link>
 
         <button id="menuButton" className="md:hidden flex items-center px-4 py-2 focus:outline-none" onClick={handleMenuClick}>
