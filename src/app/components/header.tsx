@@ -2,11 +2,11 @@ import { useTranslation } from 'react-i18next';
 import { Link, NavLink } from 'react-router-dom';
 import { languageData } from '../data/data';
 import { useState } from 'react';
-
+import iconlogo from "../../assets/icons/Logo.svg";
 
 
 const Header = () => {
-  const { i18n, t } = useTranslation(); 
+  const { i18n, t } = useTranslation(); {/*lol*/ } 
   const onChangeLang = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const lang_code = e.target.value;
     i18n.changeLanguage(lang_code);
@@ -22,7 +22,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <span className="text-xl font-bold mr-2 logo-text">Bienvenido</span>
-          <img src={''} alt="logo" className="logo2" />
+          <img src={iconlogo} alt="logo" className="logo2" />
         </Link>
 
         <button id="menuButton" className="md:hidden flex items-center px-4 py-2 focus:outline-none" onClick={handleMenuClick}>
