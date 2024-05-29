@@ -11,7 +11,7 @@ import Contact from './screens/contact';
 
 function App() {
   return (
-    <main className='flex flex-row w-screen h-screen bg-app-white font-roboto'>
+    <main className='flex flex-row w-screen h-screen font-roboto' style={{background: '#C7A77D'}}>
     
       <section className='flex-1 grid grid-rows-[auto_1fr_auto]'>
         <Header />

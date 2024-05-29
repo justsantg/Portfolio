@@ -98,5 +98,80 @@
   .text-xl {
     margin-top: 10px;
   }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #C7A77D;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  
+  .nav-links.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  @media (min-width: 768px) {
+    .nav-links {
+      position: static;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: transparent;
+      padding: 0;
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    .nav-links li {
+      margin: 0 10px;
+    }
+  }
+
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #C7A77D;
+    padding: 20px;
+    border: none;
+  }
+  
+  main {
+    padding: 20px;
+    border: none;
+  }
+  
+  footer {
+    background-color: #C7A77D;
+    padding: 20px;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    body {
+      font-size: 16px;
+    }
+  
+    main {
+      grid-template-columns: 1fr; /* Una sola columna para dispositivos móviles */
+    }
+  
+    .hide-on-mobile {
+      display: none; /* Ocultar elementos en dispositivos móviles */
+    }
+  }
+
+  
 
 

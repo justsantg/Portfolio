@@ -3,19 +3,14 @@ import { Link, NavLink } from 'react-router-dom';
 import { languageData } from '../data/data';
 import { useState } from 'react';
 
-
-
 const Header = () => {
-  const { i18n, t } = useTranslation(); {/*lol*/ } 
+  const { i18n, t } = useTranslation();
   const onChangeLang = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const lang_code = e.target.value;
     i18n.changeLanguage(lang_code);
   };
-  const [showMenu, setShowMenu] = useState(false); 
 
-  const handleMenuClick = () => {
-    setShowMenu(!showMenu); 
-  };
+  // Removed showMenu state and handleMenuClick function as they're not needed
 
   return (
     <header className="p-2" style={{ background: '#C7A77D' }}>
@@ -24,37 +19,29 @@ const Header = () => {
           <span className="text-xl font-bold mr-2 logo-text">Bienvenido</span>
         </Link>
 
-        <button id="menuButton" className="md:hidden flex items-center px-4 py-2 focus:outline-none" onClick={handleMenuClick}>
-          <svg className="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <line x1="2" y1="4" x2="20" y2="4" stroke="#000" stroke-width="2" />
-            <line x1="2" y1="10" x2="20" y2="10" stroke="#000" stroke-width="2" />
-            <line x1="2" y1="16" x2="20" y2="16" stroke="#000" stroke-width="2" />
-          </svg>
-        </button>
-
-        <ul className={`hidden md:flex ${showMenu ? 'flex' : 'hidden'}`}> {/* Conditionally render menu items */}
+        <ul className="md:flex md:items-center">
           <li>
-            <NavLink to="/" className="text-black hover:text-white p-4">
+            <NavLink to="/" className="text-black hover:text-white p-4 block md:inline-block">
               {t('homePage')}
             </NavLink>
           </li>
           <li>
-            <NavLink to="/aboutMe" className="text-black hover:text-white p-4">
+            <NavLink to="/aboutMe" className="text-black hover:text-white p-4 block md:inline-block">
               {t('aboutMe')}
             </NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio" className="text-black hover:text-white p-4">
+            <NavLink to="/portfolio" className="text-black hover:text-white p-4 block md:inline-block">
               {t('portfolio')}
             </NavLink>
           </li>
           <li>
-            <NavLink to="/habilidades" className="text-black hover:text-white p-4">
+            <NavLink to="/habilidades" className="text-black hover:text-white p-4 block md:inline-block">
               {t('skills')}
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contacto" className="text-black hover:text-white p-4">
+            <NavLink to="/contacto" className="text-black hover:text-white p-4 block md:inline-block">
               {t('contactMe')}
             </NavLink>
           </li>
@@ -77,3 +64,8 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+
+
