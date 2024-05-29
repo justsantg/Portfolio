@@ -2,11 +2,11 @@ import { useTranslation } from 'react-i18next';
 import { Link, NavLink } from 'react-router-dom';
 import { languageData } from '../data/data';
 import { useState } from 'react';
-{/*import logo from "../../assets/icons/Logo.svg";*/}
+
 
 
 const Header = () => {
-  const { i18n, t } = useTranslation(); {/*lol*/ } 
+  const { i18n, t } = useTranslation(); 
   const onChangeLang = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const lang_code = e.target.value;
     i18n.changeLanguage(lang_code);
