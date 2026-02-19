@@ -58,16 +58,16 @@ const translations = {
     en: "Telling my story feels complicated because I feel like a simple person who doesn't experience anything particularly remarkable. Born in Pasto, I grew up in a loving family that has supported me since I was very young. My father's values, tastes, and hobbies have always been present in me. My mother is a pillar of who I am today through her teachings and support. And finally, my sister, my life partner, and the fact that we grew up together at similar ages made us even closer through shared interests and experiences. On the other hand, I recently had one of the most difficult moments of my life: I ruptured my right patellar tendon while playing the sport I love most, soccer. I feel that my family and my willpower helped me recover from this, and not only that, but I also lost over 40 kilos during this recovery process, helping me feel better about myself. Moving on to my tastes, I grew up with a lot of cartoons, anime, and video games, tastes which I still maintain today. Soccer is my favorite companion for any sport, and as for music, among my favorite artists I can mention Travis Scott, Kendrick Lamar, or Tyler, the Creator. Hip hop, rap, trap, and R&B are my preferred genres, but I absolutely love salsa, with El Gran Combo de Puerto Rico as my favorites, reggaeton with Bad Bunny and Jhayco as my favorites, and any kind of music that makes me feel good and enjoy the moment.",
   },
   "about.imgCaption1": {
-    es: "Tu foto personal - Reemplaza con tu imagen",
-    en: "Your personal photo - Replace with your image",
+    es: "Mi foto personal",
+    en: "My personal photo",
   },
   "about.imgCaption2": {
-    es: "Tu universidad o lugar especial",
-    en: "Your university or special place",
+    es: "De donde vine",
+    en: "Where I come from",
   },
   "about.imgCaption3": {
-    es: "Tu espacio de trabajo o pasion",
-    en: "Your workspace or passion",
+    es: "Mi espacio de trabajo",
+    en: "My workspace",
   },
   "about.details": { es: "Detalles", en: "Details" },
   "about.labelName": { es: "Nombre", en: "Name" },

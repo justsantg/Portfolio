@@ -8,17 +8,17 @@ const timelineItems = [
   {
     key: "education" as const,
     icon: "mortarboard",
-    technologies: ["React", "TypeScript", "JavaScript", "Python", "Java", "SQL"],
+    technologies: ["React", "Django", "JavaScript", "Python", "Java", "Java", "Git", "Azure", "Agile", "Scrum"],
   },
   {
     key: "internship" as const,
     icon: "briefcase",
-    technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "Git"],
+    technologies: ["Laravel", "PHP", "Boilerplate", "MySQL", "Angular", "CSS", "HTML", "Playwright", "Advanced Git", "Agile"],
   },
   {
     key: "projects" as const,
     icon: "code",
-    technologies: ["Next.js", "Node.js", "REST APIs", "Firebase"],
+    technologies: ["Flutter", "Supabase", "REST APIs", "Firebase", "GitHub Actions", "Docker", "Kubernetes", "CI/CD", "Agile", "Scrum"],
   },
 ] as const;
 

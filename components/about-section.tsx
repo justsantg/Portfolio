@@ -6,27 +6,35 @@ import { useI18n } from "@/lib/i18n";
 import Image from "next/image";
 
 const skills = [
-  "React",
-  "TypeScript",
-  "Vite",
-  "Next.js",
-  "Tailwind CSS",
+  "JavaScript",
+  "Python",
+  "Java",
+  "ReactJS",
   "Node.js",
-  "Git",
-  "REST APIs",
+  "Express",
+  "Django",
+  "NestJS",
+  "Laravel",
+  "Flutter",
+  "Angular",
+  "HTML",
+  "CSS",
+  "Azure",
+  "Agile",
+  "Scrum",
 ];
 
 const storyImages = [
   {
-    src: "/images/about-story-1.jpg",
+    src: "/casual_photo.jpeg",
     captionKey: "about.imgCaption1" as const,
   },
   {
-    src: "/images/about-story-2.jpg",
+    src: "/child.jpeg",
     captionKey: "about.imgCaption2" as const,
   },
   {
-    src: "/images/about-story-3.jpg",
+    src: "/workspace.jpeg",
     captionKey: "about.imgCaption3" as const,
   },
 ];
@@ -68,7 +76,7 @@ export function AboutSection() {
             className="lg:col-span-2 relative aspect-[3/4] overflow-hidden border border-border group"
           >
             <Image
-              src="/images/about-story-1.jpg"
+              src="/profile.jpg"
               alt={t("about.imgCaption1")}
               fill
               className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
