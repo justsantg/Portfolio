@@ -180,38 +180,40 @@ const translations = {
     en: "Project Screenshot",
   },
   "portfolio.liveDemo": { es: "Demo en Vivo", en: "Live Demo" },
+  "portfolio.noDemo": { es: "Demo no Disponible", en: "Demo not Available" },
   "portfolio.source": { es: "Codigo", en: "Source" },
   "portfolio.1.title": {
-    es: "Nombre del Proyecto Uno",
-    en: "Project Name One",
+    es: "HandleCrash",
+    en: "HandleCrash",
   },
   "portfolio.1.description": {
-    es: "Describe tu proyecto aqui. Que problema resuelve? Que tecnologias usaste?",
-    en: "Describe your project here. What problem does it solve? What technologies did you use?",
+    es: "Aplicacion mobile enfocada en brindar ayuda a todas las personas que tienen algun problema con su vehiculo, desde mantenimiento, reparaciones, recomendaciones de productos, hasta consejos para el cuidado del vehiculo, potenciada con la IA de gemini para que el usuario pueda preguntar cualquier pregunta de su vehiculo, desde sonido hasta imagenes, brindando asi un experiencia de usuario optimizada.",
+    en: "Mobile application focused on helping people with vehicle problems, from maintenance and repairs to product recommendations and vehicle care tips, powered by Gemini AI so users can ask any question about their vehicle, from sounds to images, providing an optimized user experience.",
   },
   "portfolio.2.title": {
-    es: "Nombre del Proyecto Dos",
-    en: "Project Name Two",
+    es: "EventoYa",
+    en: "EventoYa",
   },
   "portfolio.2.description": {
-    es: "Describe tu segundo proyecto aqui. Cual fue el objetivo? Cual fue tu rol?",
-    en: "Describe your second project here. What was the goal? What was your role?",
+    es: "Plataforma web creada en Laravel voyager enfocada en la gestion de eventos realizados y a realizar en la ciudad de Pasto, Nariño, en donde se puede hacer una gestion completa para crear, editar, agendar y asistir a diferentes eventos que se van a realizar en la ciudad.",
+    en: "Web platform created in Laravel voyager focused on managing events that have been and are to be held in the city of Pasto, Nariño, where a complete management can be done to create, edit, schedule and attend different events that will be held in the city.",
   },
   "portfolio.3.title": {
-    es: "Nombre del Proyecto Tres",
-    en: "Project Name Three",
+    es: "Bank App",
+    en: "Bank App",
   },
   "portfolio.3.description": {
-    es: "Agrega otra descripcion de proyecto. Destaca el impacto y los desafios tecnicos que superaste.",
-    en: "Add another project description. Highlight the impact and the technical challenges you overcame.",
+    es: "Ejercicio realizado con angular y base de datos de posgres simulando una entidad bancaria en donde el usuario puede realizar movimientos y ver los movimientos que ha realizado.",
+    en: "Exercise done with angular and postgres database simulating a banking entity where the user can make transactions and view the transactions they have made.",
   },
   "portfolio.4.title": {
-    es: "Nombre del Proyecto Cuatro",
-    en: "Project Name Four",
+    es: "AVC Inmobiliaria y Constructora",
+    en: "AVC Real Estate and Construction",
   },
   "portfolio.4.description": {
-    es: "Describe un proyecto mas. Muestra la diversidad de tus habilidades y los tipos de aplicaciones que construyes.",
-    en: "Describe one more project. Showcase diversity in your skills and the types of applications you build.",
+    es: "Sitio web desarrollado para una empresa de inmobiliaria y constructora, enfocado en mostrar sus propiedades disponibles, servicios ofrecidos y contacto con la empresa.",
+    en: "Website developed for a real estate and construction company, focused on showcasing their available properties, services offered, and company contact.",
+
   },
 
   // Contact

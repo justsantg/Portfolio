@@ -6,10 +6,10 @@ import { ExternalLink, Github } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
 const projectKeys = [
-  { key: "1", technologies: ["React", "TypeScript", "Vite"], liveUrl: "#", githubUrl: "#" },
-  { key: "2", technologies: ["Next.js", "Tailwind CSS", "Node.js"], liveUrl: "#", githubUrl: "#" },
-  { key: "3", technologies: ["React", "Redux", "REST API"], liveUrl: "#", githubUrl: "#" },
-  { key: "4", technologies: ["TypeScript", "Vite", "Firebase"], liveUrl: "#", githubUrl: "#" },
+  { key: "1", technologies: ["Flutter", "Supabase", "Google API"], liveUrl: "#", githubUrl: "https://github.com/justsantg/HandleCrash.git", image: "/HandleCrash.png" },
+  { key: "2", technologies: ["Laravel", "Voyager", "MAMP"], liveUrl: "#", githubUrl: "https://github.com/justsantg/EventoYa.git", image: "/EventoYa.png" },
+  { key: "3", technologies: ["Angular", "Postgres", "NestJS"], liveUrl: "#", githubUrl: "https://github.com/justsantg/bank-app.git", image: "/BankApp.jpeg" },
+  { key: "4", technologies: ["TypeScript", "React", "Supabase"], liveUrl: "https://www.avcinmobiliariayconstructora.com/", githubUrl: "https://github.com/ElevaForge/FrontEnd_AVC.git", image: "/AVC.png" },
 ] as const;
 
 function ProjectCard({
@@ -17,6 +17,7 @@ function ProjectCard({
   technologies,
   liveUrl,
   githubUrl,
+  image,
   index,
   isInView,
 }: {
@@ -24,6 +25,7 @@ function ProjectCard({
   technologies: readonly string[];
   liveUrl: string;
   githubUrl: string;
+  image: string;
   index: number;
   isInView: boolean;
 }) {
@@ -51,14 +53,19 @@ function ProjectCard({
         {String(index + 1).padStart(2, "0")}
       </span>
 
-      {/* Image placeholder */}
+      {/* Project image */}
       <motion.div
         animate={{ height: isHovered ? 200 : 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="overflow-hidden mb-0 group-hover:mb-6 bg-secondary/50 flex items-center justify-center"
+        className="overflow-hidden mb-0 group-hover:mb-6 bg-secondary/50 relative"
       >
-        <p className="text-xs text-muted-foreground tracking-widest uppercase">
-          {t("portfolio.screenshot")}
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full object-cover"
+        />
+        <p className="absolute bottom-2 left-2 text-xs text-white/80 tracking-widest uppercase bg-black/50 px-2 py-1">
+          {title}
         </p>
       </motion.div>
 
@@ -82,16 +89,23 @@ function ProjectCard({
       </div>
 
       <div className="flex items-center gap-4">
-        <a
-          href={liveUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 text-xs tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
-          aria-label={`${t("contact.viewDemo")} ${title}`}
-        >
-          <ExternalLink size={14} />
-          {t("portfolio.liveDemo")}
-        </a>
+        {liveUrl !== "#" ? (
+          <a
+            href={liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-xs tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
+            aria-label={`${t("contact.viewDemo")} ${title}`}
+          >
+            <ExternalLink size={14} />
+            {t("portfolio.liveDemo")}
+          </a>
+        ) : (
+          <span className="flex items-center gap-2 text-xs tracking-widest uppercase text-muted-foreground/50 cursor-not-allowed">
+            <ExternalLink size={14} />
+            {t("portfolio.noDemo")}
+          </span>
+        )}
         <a
           href={githubUrl}
           target="_blank"
@@ -143,6 +157,7 @@ export function PortfolioSection() {
               technologies={project.technologies}
               liveUrl={project.liveUrl}
               githubUrl={project.githubUrl}
+              image={project.image}
               index={i}
               isInView={isInView}
             />
